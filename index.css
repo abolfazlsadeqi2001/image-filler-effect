@@ -1,0 +1,57 @@
+.fill-width-screen {
+	width : 100vw;
+}
+
+.fill-height-screen{
+	height : 100vh;
+}
+
+.absolute-0-0{
+	position : absolute;
+	left : 0px;
+	top : 0px;
+}
+
+.fill-background {
+	background-repeat : no-repeat;
+	background-position : left;
+	background-size : 100vw 100vh;
+}
+
+.images-container{
+	
+}
+
+.main-image{
+	background-image : url('farsi_friends_main.png');
+}
+
+.cartoon-image{
+	background-image : url('farsi_friends_cartoon.png');
+	
+	animation-name : image-filling;
+	animation-duration : 5s;
+	animation-iteration-count : infinite;
+}
+
+@keyframes image-filling{
+	0% {
+		width : 0vw;
+	}
+	
+	25% {
+		width : 50vw;
+	}
+	
+	50% {
+		width : 100vw;
+	}
+	
+	75% {
+		width : 50vw;
+	}
+	
+	100% {
+		width : 0vw;
+	}
+}
